@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="900">
+    <Grid Margin="0,10,0,0">
+        <ComboBox ItemsSource="{Binding Delay=500}" x:Name="comboBoxAddress"
+          TextBoxBase.TextChanged="OnComboboxTextChanged"
+          SelectionChanged="ComboBox_SelectionChanged"
+          IsTextSearchEnabled="False" IsEditable="True"
+          VerticalAlignment="Top" Margin="36,100,198,0"/>
+        <Label Content="Адрес:&#xD;&#xA;" HorizontalAlignment="Left" Margin="36,69,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="36,200,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Fias код города" HorizontalAlignment="Left" Margin="36,250,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Улица" HorizontalAlignment="Left" Margin="36,300,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Fias код улицы" HorizontalAlignment="Left" Margin="36,350,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Номер дома" HorizontalAlignment="Left" Margin="36,400,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Корпус дома" HorizontalAlignment="Left" Margin="36,450,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Fias код дома" HorizontalAlignment="Left" Margin="36,500,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Геоданные дома" HorizontalAlignment="Left" Margin="36,550,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Кол-во этажей" HorizontalAlignment="Left" Margin="36,600,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Кол-во подъездов" HorizontalAlignment="Left" Margin="36,650,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="t1" HorizontalAlignment="Left" Height="23" Margin="239,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t2" HorizontalAlignment="Left" Height="23" Margin="239,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t3" HorizontalAlignment="Left" Height="23" Margin="239,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t4" HorizontalAlignment="Left" Height="23" Margin="239,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t5" HorizontalAlignment="Left" Height="23" Margin="239,408,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t6" HorizontalAlignment="Left" Height="23" Margin="239,458,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t7" HorizontalAlignment="Left" Height="23" Margin="239,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t8" HorizontalAlignment="Left" Height="23" Margin="239,558,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t9" HorizontalAlignment="Left" Height="23" Margin="239,608,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+        <TextBox x:Name="t10" HorizontalAlignment="Left" Height="23" Margin="239,658,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273"/>
+    </Grid>
+</Window>
